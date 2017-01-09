@@ -11,5 +11,10 @@ web即时聊天(ajax长轮询方式实现)
 ３．使用确认机制来确保客户端收到信息．
 ４．使用超时机制来确保用户离线时，关闭连接．
 
-浏览方式
+客户端使用方式:
+假如AB两人对话,A的UID为1,B的UID为2.
+
+A发起的url为
 http://domain/client.php?from=1&to=2
+B发起的url为
+http://domain/client.php?from=2&to=1
