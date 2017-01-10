@@ -76,6 +76,6 @@ while (true) {
         exit();
     }
 
-    file_put_contents('./test.log', date('Y-m-d H:i:s') . "已经执行了{$i}次" . "\r\n", FILE_APPEND);
+    //file_put_contents('./test.log', date('Y-m-d H:i:s') . "已经执行了{$i}次" . "\r\n", FILE_APPEND);
     sleep(1);
 }
