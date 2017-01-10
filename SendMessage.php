@@ -26,7 +26,8 @@ $reciverUid = (int)$_POST['reciver_uid'];
 $message = str_replace([' ', ','], '', $_POST['message']);
 $time = time();
 $sql = "insert into message values(NULL ,'{$reciverUid}','{$senderUid}','{$message}','{$time}','1')";
-$insertId = mysqli_query($link, $sql);
+$result = mysqli_query($link, $sql);
+$insertId = mysqli_insert_id();
 
 if ($insertId) {
     $returnArr = [
