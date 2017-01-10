@@ -18,3 +18,7 @@ A发起的url为
 http://domain/client.php?from=1&to=2
 B发起的url为
 http://domain/client.php?from=2&to=1
+
+安装方法：
+１．执行ｓｑｌ文件中的ｓｑｌ语句
+２．根据实际情况修改程序文件中的数据库配置
