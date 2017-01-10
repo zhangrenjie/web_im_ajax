@@ -33,6 +33,7 @@ switch ($requestType) {
         $ids = implode(',', $idsArr);
         $sql = "update message set status = 2 where id in ({$ids})";
         mysqli_query($link, $sql);
+        mysqli_close($link);
         break;
     default:
         break;
@@ -58,6 +59,7 @@ while (true) {
                 'info' => $returnArr,
             ];
             echo json_encode($data);
+            mysqli_free_result($result);
             mysqli_close($link);
             exit();
         }
