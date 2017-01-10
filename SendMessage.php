@@ -5,7 +5,6 @@
  * Date: 2017/1/2
  * Time: 下午9:01
  */
-$conn = mysqli_connect('127.0.0.1', 'root', '', 'web_im');
 $link = mysqli_connect(
     '127.0.0.1',  /* The host to connect to 连接MySQL地址 */
     'root',      /* The user to connect as 连接MySQL用户名 */
@@ -42,5 +41,6 @@ if ($insertId) {
 }
 
 echo json_encode($returnArr);
+mysqli_close($link);
 exit();
 
