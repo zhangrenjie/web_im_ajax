@@ -28,7 +28,7 @@ $reciverUid = (int)$_GET['to'];
         }
 
         #message-box {
-            width: 400px;
+            width: 380px;
             height: 40px;
         }
     </style>
