@@ -8,7 +8,6 @@
 
 set_time_limit(0);
 $maxInvalidCount = 30;
-$conn = mysqli_connect('127.0.0.1', 'root', '', 'web_im');
 $link = mysqli_connect(
     '127.0.0.1',  /* The host to connect to 连接MySQL地址 */
     'root',      /* The user to connect as 连接MySQL用户名 */
@@ -59,7 +58,7 @@ while (true) {
                 'info' => $returnArr,
             ];
             echo json_encode($data);
-            mysqli_close($conn);
+            mysqli_close($link);
             exit();
         }
     }
@@ -73,7 +72,7 @@ while (true) {
         ];
 
         echo json_encode($data);
-        mysqli_close($conn);
+        mysqli_close($link);
         exit();
     }
 
