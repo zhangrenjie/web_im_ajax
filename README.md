@@ -22,3 +22,6 @@ http://domain/client.php?from=2&to=1
 安装方法：
 １．执行ｓｑｌ文件中的ｓｑｌ语句
 ２．根据实际情况修改程序文件中的数据库配置
+
+博文介绍：
+http://phpme.blog.51cto.com/663593/1890859
